@@ -1,6 +1,6 @@
 ---
 name: vanilla-pod-js
-description: Use when writing framework-free browser JavaScript: JTD (.jtd.json) schemas → generated validate() → Error[] validators with barrel re-exports → validate-then-freeze perimeter → typed fetchers over NDJSON Row streams (fail-closed) → pure map/flatMap projections → light-DOM Web Components, all type-checked by JSDoc + tsc --noEmit with no transpilation, no .d.ts, no server-side guidance
+description: Use when writing framework-free browser JavaScript with JSDoc type checking. Covers JTD schemas, generated runtime validators, frozen immutable data at the trust boundary, typed fetchers that validate before use, and light-DOM Web Components. No frameworks, no transpiling, no TypeScript files, no server-side code.
 ---
 
 # Vanilla Pod JS
