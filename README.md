@@ -33,7 +33,11 @@ The published catalog lives at
 
 ## Working conventions
 
-- Agents should prefer the `opencode-subagent-delegation` skill for
-  major work items (see `AGENTS.md`).
+- Major work items are delegated to subagents — one spec per item, one
+  agent per spec, agents stage their work and never commit, the
+  orchestrator reviews the diff and commits. No specific agent tool is
+  mandated; the process is documented at
+  [opencode-subagent-delegation](https://github.com/prompt-cult/opencode-subagent-delegation)
+  (repository name is historical). See `AGENTS.md`.
 - Scratch work lives in `.tmp/`, which is gitignored and disposable.
 - `sources/` holds newest-version captures with provenance.
