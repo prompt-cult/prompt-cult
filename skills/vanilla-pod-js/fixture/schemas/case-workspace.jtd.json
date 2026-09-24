@@ -1,0 +1,12 @@
+{
+  "elements": {
+    "properties": {
+      "case_id": { "type": "string" },
+      "case_name": { "type": "string" }
+    },
+    "optionalProperties": {
+      "owner": { "type": "string" },
+      "priority": { "enum": ["low", "normal", "high"] }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "discriminator": "_type",
+  "mapping": {
+    "tray_moved": {
+      "properties": {
+        "case_id": { "type": "string" },
+        "from_tray": { "type": "string" },
+        "to_tray": { "type": "string" }
+      },
+      "optionalProperties": {
+        "meta": {}
+      }
+    },
+    "tray_note_added": {
+      "properties": {
+        "case_id": { "type": "string" },
+        "note": { "type": "string" }
+      },
+      "optionalProperties": {
+        "meta": {}
+      }
+    }
+  }
+}
