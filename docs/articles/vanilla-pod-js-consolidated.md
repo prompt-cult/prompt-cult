@@ -4,8 +4,8 @@ vanilla-pod-js is the organisation's first published skill: framework-free
 browser JavaScript with JTD schemas compiled ahead of time into
 dependency-free validators, frozen immutable data at the trust boundary,
 typed fetchers over NDJSON row streams that fail closed, and JSDoc checked
-by tsc without transpiling. Skill: [SKILL.md](https://github.com/prompt-cult/prompt-cult/blob/main/skills/vanilla-pod-js/SKILL.md);
-fixture: [fixture/](https://github.com/prompt-cult/prompt-cult/tree/main/skills/vanilla-pod-js/fixture).
+by tsc without transpiling. Skill: [SKILL.md](https://github.com/prompt-cult/prompt-cult/blob/2026.11.06/skills/vanilla-pod-js/SKILL.md);
+fixture: [fixture/](https://github.com/prompt-cult/prompt-cult/tree/2026.11.06/skills/vanilla-pod-js/fixture).
 
 The idea lived as a scatter of gists and repo docs — a browser-baseline
 note duplicated across files, a DTO convention, two functional-fetcher
