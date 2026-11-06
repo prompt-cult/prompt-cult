@@ -9,8 +9,8 @@ ifeq ($(UNAME_M),arm64)
 else
   CODEGEN_ASSET := x86_64-unknown-linux-gnu
 endif
-# Pinned codegen binary tag (overridable: make init RELEASE_TAG=nightly-20260901)
-RELEASE_TAG ?= nightly-20260829
+# Pinned codegen binary tag (overridable: make init RELEASE_TAG=nightly-20261106)
+RELEASE_TAG ?= release/0.4.0
 
 init:
 	@mkdir -p .bin

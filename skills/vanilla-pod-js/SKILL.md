@@ -20,7 +20,7 @@ code have zero runtime dependencies.
 
 | Tool | What it does | Where it comes from | Pin |
 |---|---|---|---|
-| jtd-codegen | compiles a JTD schema into a validator module | GitHub Releases of prompt-cult/json-type-definition-RFC-8927, or build from source with cargo | nightly-20260829 (what the fixture proves); bump the pin only after the check gate passes |
+| jtd-codegen | compiles a JTD schema into a validator module | GitHub Releases of prompt-cult/json-type-definition-RFC-8927, or build from source with cargo | release/0.4.0 (what the fixture proves); bump the pin only after the check gate passes |
 | Node.js | runs the validators, the kernel, and the tests | nodejs.org or brew | 18 or newer (the tests use the built-in test runner); 20 or newer recommended |
 | TypeScript | checks JSDoc types; never emits | npm | latest; always run with no emit |
 | gh CLI | downloads the generator release binary (optional; curl works too) | cli.github.com | any recent version |
@@ -34,7 +34,7 @@ Install the generator (macOS arm64 in this example; the asset table follows):
 
 ```sh
 mkdir -p .bin
-gh release download nightly-20260829 \
+gh release download release/0.4.0 \
   --repo prompt-cult/json-type-definition-RFC-8927 \
   --pattern "*aarch64-apple-darwin*" \
   --dir .bin --clobber
@@ -42,11 +42,11 @@ tar -xzf .bin/jtd-codegen*.tar.gz -C .bin
 chmod +x .bin/jtd-codegen
 ```
 
-Without the gh CLI, curl the same asset:
+Without the gh CLI, curl the same release assets (the release page is the
+stable pointer; the asset names carry the build tag of the same commit):
 
 ```sh
-curl -sL -o .bin/jtd-codegen.tar.gz \
-  https://github.com/prompt-cult/json-type-definition-RFC-8927/releases/download/nightly-20260829/jtd-codegen_nightly-20260829_aarch64-apple-darwin.tar.gz
+curl -sL https://github.com/prompt-cult/json-type-definition-RFC-8927/releases/tag/release%2F0.4.0
 ```
 
 Or build from source:
